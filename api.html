@@ -13,7 +13,7 @@
 
 	function initialize() {
 		if (GBrowserIsCompatible()) {
-			gdir = new GDirections(null, null);
+			gdir = new GDirections(null, "body");
 			geocoder = new GClientGeocoder();
 			
 			GEvent.addListener(gdir, "load", onGDirectionsLoad);
